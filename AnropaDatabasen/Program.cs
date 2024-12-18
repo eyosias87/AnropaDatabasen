@@ -53,17 +53,17 @@ namespace AnropaDatabasen
 
             using (var context = new ThoreSkolaContext())
             {
-                Skapar ett nytt objekt av samma typ som "tabellen" jag riktar mig mot.
+                //Skapar ett nytt objekt av samma typ som "tabellen" jag riktar mig mot.
                 var newEmployee = new Employee
                 {
-                     Fyller i data som jag vill få in i databasen
+                     //Fyller i data som jag vill få in i databasen
                     FirstName = "Alexa",
                     LastName = "Ulf",
                     Title = "Polska lärare",
                     PersonalNumber = "199205150012"
                 };
 
-                Här lägger jag till datan i databasen och sparar det.
+                //Här lägger jag till datan i databasen och sparar det.
                 context.Employees.Add(newEmployee);
                 context.SaveChanges();
                 Console.WriteLine("Ny rad är skapad!");
